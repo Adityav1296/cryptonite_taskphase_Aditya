@@ -1,4 +1,4 @@
-**#THE ROOT**
+# THE ROOT
 
 The filesystem starts at '/'. You can invoke a program by providing its path on the command line. This style of path, one that starts with the root directory, is referred to as an "absolute path".
 
@@ -11,7 +11,7 @@ The filesystem starts at '/'. You can invoke a program by providing its path on 
 >pwn.college{gwYTXFirh6NVsvwocG3j5is4eEp.dhzN5QDLygjN0czW}
 ___________________________________________________________
 
-**#PROGRAM AND ABSOULTE PATHS**
+# PROGRAM AND ABSOULTE PATHS
 
  The path to any directory is thus, /(directoryname). The path to a challenge inside a directory is /(directoryname)/(challengename). 
 
@@ -26,7 +26,7 @@ ___________________________________________________________
 >pwn.college{wRZ7scgbEd04iaXvhkt1mxWt4eb.dVDN1QDLygjN0czW}
 ______________________________________________________________
 
-**#POSITION THY SELF**
+# POSITION THY SELF
 
 You can navigate around directories by using the cd (change directory) command and passing a path to it as an argument. Now you can see what the ~ was in the prompt! It shows the current that your shell is located at.
 
@@ -41,7 +41,7 @@ You can navigate around directories by using the cd (change directory) command a
 >pwn.college{02PuCN54GP6Nsr38VA2PNiyQ88J.dZDN1QDLygjN0czW}
 ________________________________________________________________
 
-**#POSITION ELSEWHERE**
+# POSITION ELSEWHERE
 
 ***Command:***
 
@@ -54,7 +54,7 @@ ________________________________________________________________
 >pwn.college{AubZPnK7xom9_aOhNLL7tvKL9vI.ddDN1QDLygjN0czW}
 ___________________________________________________________
 
-**#POSITION YET ELSEWHERE**
+# POSITION YET ELSEWHERE
 
 ***Command:***
 
@@ -67,7 +67,7 @@ ___________________________________________________________
 >pwn.college{wfiCufvGX0d2GCBHfqflAmUQhJU.dhDN1QDLygjN0czW}
 _______________________________________________________________
 
-**#IMPLICIT RELATIVE PATHS FROM '/'**
+# IMPLICIT RELATIVE PATHS FROM '/'
 
 A relative path is any path that does not start at root (i.e., it does not start with /). 
 Your cwd is the directory that your prompt is currently located at.
@@ -98,7 +98,7 @@ ssh-entrypoint: cd: c: No such file or directory
 Incorrect...You invoked this challenge with an absolute path. This challenge needs a relative path!
 ___________________________________________________________________________________________________________
 
-**#EXPLICIT RELATIVE PATHS FROM '/'**
+# EXPLICIT RELATIVE PATHS FROM '/'
 
 In most operating systems, including Linux, every directory has two implicit entries that you can reference in paths: . and ... The first, ., refers right to the same directory
 
@@ -130,7 +130,7 @@ In most operating systems, including Linux, every directory has two implicit ent
 Follow correct format to use '.' for relative paths.
 _________________________________________________________
 
-**#IMPLICIT RELATIVE PATH**
+# IMPLICIT RELATIVE PATH
 
 Linux explicitly avoids automatically looking in the current directory when you provide a "naked" path. This is actually a safety measure.
 
@@ -145,7 +145,7 @@ Linux explicitly avoids automatically looking in the current directory when you 
 >pwn.college{Eoow8R418nc9XiyBy6NFM7ZURK_.dFTN1QDLygjN0czW}
 _____________________________________________________________
 
-**#HOME SWEET HOME**
+# HOME SWEET HOME
 
 Every user has a home directory, typically under /home in the filesystem. The ~ in this prompt is the current working directory, with ~ being shorthand for /home/hacker. 
 
