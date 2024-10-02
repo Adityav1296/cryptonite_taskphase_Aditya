@@ -1,5 +1,4 @@
-**#INTRO TO COMMANDS**
-______________________
+# INTRO TO COMMANDS
 
 Invoke the hello command.
  
@@ -10,11 +9,10 @@ Invoke the hello command.
  ***Flag:***
  
  >pwn.college{wXHpr2GmZG9CvbuDVZRDWp0fCAZ.ddjNyUDLygjN0czW}
+______________________________________________________________
 
 
-
-**#INTRO TO ARGUMENTS**
-_______________________
+# INTRO TO ARGUMENTS
 
 Run the hello command with a single argument of hackers. 
 
