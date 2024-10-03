@@ -58,6 +58,81 @@ Eg: hacker@dojo:~$ grep SEARCH_STRING /path/to/file. the grep command will searc
 >pwn.college{8VxLjaUtYXxbwLxzM9i3RCzv5n7.ddTM4QDLygjN0czW}
 __________________________________________________________________
 
+# LISTING FILES
+
+ls will list files in all the directories provided to it as arguments, and in the current directory if no arguments are provided.
+
+Eg: hacker@dojo:~$ ls
+
+Desktop    Downloads  Pictures  Templates
+
+Documents  Music      Public    Videos
+
+***Commands:***
+
+1) `hacker@commands~listing-files:~$ ls /challenge`
+*output: 8-renamed-run-7449  DESCRIPTION.md*
+
+2) `hacker@commands~listing-files:~$ cd /challenge`
+   
+3) `hacker@commands~listing-files:/challenge$ cat 8-renamed-run-7449`
+*output: #!/opt/pwn.college/bash echo "Yahaha, you found me! Here is your flag:" cat /flag*
+
+4) `hacker@commands~listing-files:/challenge$ ./8-renamed-run-7449`
+*output: Yahaha, you found me! Here is your flag:*
+
+***Flag:***
+
+>pwn.college{cssMThFsqvesuaS8polUhHWx_dl.dhjM4QDLygjN0czW}
+
+***Problem:***
+
+1) `hacker@commands~listing-files:/challenge$ cd /flag`
+*output: ssh-entrypoint: cd: /flag: Not a directory*
+
+2) `hacker@commands~listing-files:/challenge$ cat /flag`
+*output: cat: /flag: Permission denied*
+
+***Solution:***
+
+1) Flag is a file name that we have to find. Hence don't use it with change directory command unless specified.
+
+2) In this particular challenge, the flag file has been renamed. Therefore, when a file name is changed, make sure to use the new name with all the programs instead of the old one. 
+__________________________________________________________________________________________________________________________________________________________________
+
+# TOUCHING FILES
+
+ You can create a new, blank file by touching it with the touch command: 
+
+ Eg:hacker@dojo:/tmp$ touch pwnfile
+
+    hacker@dojo:/tmp$ ls
+
+    pwnfile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
