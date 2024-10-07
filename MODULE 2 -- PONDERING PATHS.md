@@ -127,7 +127,7 @@ In most operating systems, including Linux, every directory has two implicit ent
 
 ***Solution:***
 
-Follow correct format to use '.' for relative paths.
+Follow correct format to use '.' for relative paths. Also make sure that you are in the right directory.
 _________________________________________________________
 
 # IMPLICIT RELATIVE PATH
@@ -167,5 +167,5 @@ cat: /home/hacker: Is a directory*
 
 ***Solution:***
 
-Instead of writing just the '~' character after /challenge/run, use '~/' or '~/f'.
+Instead of writing just the ~ character after /challenge/run, use ~/ or ~/f.
 _______________________________________________________________________________________
