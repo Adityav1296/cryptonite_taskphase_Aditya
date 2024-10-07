@@ -100,7 +100,7 @@ ________________________________________________________________________________
 
 # EXPLICIT RELATIVE PATHS FROM '/'
 
-In most operating systems, including Linux, every directory has two implicit entries that you can reference in paths: . and ... The first, ., refers right to the same directory
+In most operating systems, including Linux, every directory has two implicit entries that you can reference in paths: . and .. . The first, ., refers right to the same directory
 
 ***Command:***
 
