@@ -198,5 +198,15 @@ SECRET_ARG should be "U2yeLBob"*
 
 # Split Piping Stderr and Stdout
 
-***Commands:
+***Commands:***
+
+1) `hacker@piping~split-piping-stderr-and-stdout:~$ /challenge/hack > >(/challenge/planet) 2>(/challenge/the)`
+*output: You must redirect my standard error into '/challenge/the'!*
+
+2) `hacker@piping~split-piping-stderr-and-stdout:~$  /challenge/hack > >(/challenge/planet) 2> >(/challenge/the)`
+
+***Flag:***
+
+>pwn.college{MLrstJaNQJkpQS4_JSoBr03_xtP.dFDNwYDLygjN0czW}
+---
   
