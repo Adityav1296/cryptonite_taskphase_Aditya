@@ -113,6 +113,49 @@ The man -K (search string) command can be used to find a hidden manpage easily i
 
 ---
 
-#
+# Helpful Programs
 
+Some programs don't have a man page, but might tell you how to run them if invoked with a special argument. Usually, this argument is --help, but it can often be -h or, in rare cases, -?, help, or other esoteric values like /?
 
+***Commands:***
+
+1) `hacker@man~helpful-programs:~$ cd /`
+
+2) `hacker@man~helpful-programs:/$ /challenge/challenge --help`
+
+3) `hacker@man~helpful-programs:/$ /challenge/challenge --p`
+*output:The secret value is: 356*
+
+4) `hacker@man~helpful-programs:/$ /challenge/challenge --g 356`
+
+***Flag:***
+
+> pwn.college{EZVn3bex5oCDW6U550oIjGs5zDM.ddjM4QDLygjN0czW}
+
+***Extra Info:***
+
+1) `hacker@man~helpful-programs:/$ /challenge/challenge --fortune`
+*output:To err is human; to forgive is simply not our policy.
+                -- MIT Assasination Club*
+---
+
+# Help For Builtins
+
+Some commands, rather than being programs with man pages and help options, are built into the shell itself. These are called builtins. Builtins are invoked just like commands, but the shell handles them internally instead of launching other programs. You can get a list of shell builtins by running the builtin help.
+
+You can get help on a specific one by passing it to the help builtin. Eg: help cd.
+
+***Commands:***
+
+1) `hacker@man~help-for-builtins:~$ cd /`
+
+2) `hacker@man~help-for-builtins:/$ help`
+
+3) `hacker@man~help-for-builtins:/$ help challenge`
+
+4) `hacker@man~help-for-builtins:/$ challenge   --secret Aw2QTdGT`
+
+***Flag:***
+
+>pwn.college{Aw2QTdGT-tkgwKX9yUvkpWz1cyN.dRTM5QDLygjN0czW}
+---
