@@ -201,10 +201,10 @@ SECRET_ARG should be "U2yeLBob"*
 
 ***Commands:***
 
-1) `hacker@piping~split-piping-stderr-and-stdout:~$ /challenge/hack > >(/challenge/planet) 2>(/challenge/the)`
+1) `hacker@piping~split-piping-stderr-and-stdout:~$ /challenge/hack | tee >(/challenge/planet) | 2>(/challenge/the)`
 *output: You must redirect my standard error into '/challenge/the'!*
 
-2) `hacker@piping~split-piping-stderr-and-stdout:~$  /challenge/hack > >(/challenge/planet) 2> >(/challenge/the)`
+2) `hacker@piping~split-piping-stderr-and-stdout:~$ /challenge/hack 2> >(/challenge/the) | tee > >(/challenge/planet)`
 
 ***Flag:***
 
