@@ -62,13 +62,14 @@ Just like standard output, you can also redirect the error channel of commands.
 
 A File Descriptor (FD) is a number the describes a communication channel in Linux. 
 
-Eg: FD 0: Standard Input
-FD 1: Standard Output
-FD 2: Standard Error
+Eg: 1. FD 0: Standard Input
+
+  2) FD 1: Standard Output
+
+  3) FD 2: Standard Error
 
 You can redirect multiple file descriptors at the same time! For example:
-
-hacker@dojo:~$ some_command > output.log 2> errors.log
+`hacker@dojo:~$ some_command > output.log 2> errors.log`
 
 ***Commands:***
 
