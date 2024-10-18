@@ -3,6 +3,8 @@ while the programs written in this language are known as "shell scripts".
 Variables are the names that may hold the directories or some useful information.
 Spaces have special significance in the shell, and there are places where you can't use them spuriously.
 
+---
+
 # Printing Variables
 
 Echo is the command that is used to print the arguments given to it. 
