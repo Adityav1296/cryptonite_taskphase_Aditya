@@ -55,4 +55,37 @@ Congratulations! You properly set the flag and 'win' has launched!*
 >pwn.college{8E7-cmiAbCqe6ZZbDGlGoQCXMjU.dVzNyUDLygjN0czW}
 ---
 
+# Adding Commands
+
+***Commands:***
+
+1) `hacker@path~adding-commands:~$ echo $PATH`
+*output: /run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin*
+
+2) `hacker@path~adding-commands:~$ cd /run/workspace/bin`
+
+3) `hacker@path~adding-commands:/run/workspace/bin$ find -name cat`  *output: ./cat*
+
+4) `hacker@path~adding-commands:/run/workspace/bin$ cd ~`
+
+5) `hacker@path~adding-commands:~$ ls` *output: Desktop  f  not-the-flag  the-flag  win  win.sh*
+
+6) `hacker@path~adding-commands:~$ echo "cat /flag" > /home/hacker/win`
+
+7) `hacker@path~adding-commands:~$ /challenge/run`
+
+8) `hacker@path~adding-commands:~$ ls -l win`
+*output: -rw-r--r-- 1 hacker hacker 10 Oct 19 16:43 win*
+
+9) `hacker@path~adding-commands:~$ chmod a+x win`
+
+10) `hacker@path~adding-commands:~$ ls -l win`  *output: -rwxr-xr-x 1 hacker hacker 10 Oct 19 16:43 win*
+
+11) `hacker@path~adding-commands:~$ /challenge/run`
+
+***Flag:***
+
+>pwn.college{wVqOGJ2yk91l5kQNXC8LLSg-pTh.dZzNyUDLygjN0czW}
+---
+
 # 
